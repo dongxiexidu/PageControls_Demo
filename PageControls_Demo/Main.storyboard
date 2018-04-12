@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PageControls_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ToG-Vf-PdH" userLabel="PageControl" customClass="PageControl" customModule="PageControls_Demo" customModuleProvider="target">
+                                <rect key="frame" x="162" y="134" width="50" height="20"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="nsm-nE-NcQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pageCount">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="currentPage">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="currentPageIndicatorTintColor">
+                                        <color key="value" red="0.72941176470000002" green="0.4431372549" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pageIndicatorTintColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oiH-qq-h3E" customClass="SnakePageControl" customModule="PageControls_Demo">
+                                <rect key="frame" x="162" y="184" width="50" height="10"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pageCount">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqI-F8-GVn" customClass="FilledPageControl" customModule="PageControls_Demo">
+                                <rect key="frame" x="162" y="284" width="50" height="10"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inactiveRingWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pageCount">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZd-o2-SvV" customClass="PillPageControl" customModule="PageControls_Demo">
+                                <rect key="frame" x="150" y="384" width="74" height="3"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pageCount">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBZ-UF-9VG" customClass="ScrollingPageControl" customModule="PageControls_Demo">
+                                <rect key="frame" x="143" y="484" width="90" height="20"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pageCount">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ringRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="indicatorPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="indicatorRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="I5x-X4-qLq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tqI-F8-GVn" firstAttribute="centerX" secondItem="BZd-o2-SvV" secondAttribute="centerX" id="05M-Gg-1FA"/>
+                            <constraint firstItem="tqI-F8-GVn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.85" id="1zF-nh-HbB"/>
+                            <constraint firstItem="qBZ-UF-9VG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.45" id="2Vb-Sg-hNP"/>
+                            <constraint firstItem="BZd-o2-SvV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.15" id="9Nr-cV-HLC"/>
+                            <constraint firstItem="BZd-o2-SvV" firstAttribute="top" secondItem="tqI-F8-GVn" secondAttribute="bottom" constant="90" id="Bks-cO-eme"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="I5x-X4-qLq" secondAttribute="bottom" id="Dqw-Ff-iQ3"/>
+                            <constraint firstItem="oiH-qq-h3E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.55" id="Ebi-n0-iDv"/>
+                            <constraint firstItem="tqI-F8-GVn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="162" id="KEP-2p-FOR"/>
+                            <constraint firstItem="tqI-F8-GVn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LZz-Xd-U9d"/>
+                            <constraint firstItem="ToG-Vf-PdH" firstAttribute="leading" secondItem="oiH-qq-h3E" secondAttribute="leading" id="Nrt-n5-I67"/>
+                            <constraint firstItem="tqI-F8-GVn" firstAttribute="leading" secondItem="oiH-qq-h3E" secondAttribute="leading" id="P7J-Io-ZcG"/>
+                            <constraint firstItem="I5x-X4-qLq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PYR-P4-b4S"/>
+                            <constraint firstItem="qBZ-UF-9VG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Paq-Lq-5hH"/>
+                            <constraint firstItem="qBZ-UF-9VG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="143" id="Rtp-Zx-MFI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qBZ-UF-9VG" secondAttribute="bottom" constant="163" id="SKS-4s-66y"/>
+                            <constraint firstItem="qBZ-UF-9VG" firstAttribute="top" secondItem="BZd-o2-SvV" secondAttribute="bottom" constant="97" id="Sfh-9o-asf"/>
+                            <constraint firstItem="oiH-qq-h3E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4P-IZ-gd7"/>
+                            <constraint firstAttribute="trailing" secondItem="I5x-X4-qLq" secondAttribute="trailing" id="orb-vx-RFQ"/>
+                            <constraint firstItem="tqI-F8-GVn" firstAttribute="top" secondItem="oiH-qq-h3E" secondAttribute="bottom" constant="90" id="qh2-MF-hEb"/>
+                            <constraint firstItem="BZd-o2-SvV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150" id="qju-Zv-3no"/>
+                            <constraint firstItem="I5x-X4-qLq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="saT-UL-rmX"/>
+                            <constraint firstItem="BZd-o2-SvV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sqn-U3-lbs"/>
+                            <constraint firstItem="ToG-Vf-PdH" firstAttribute="bottom" secondItem="oiH-qq-h3E" secondAttribute="bottom" constant="-40" id="tOb-Oc-myA"/>
+                            <constraint firstItem="ToG-Vf-PdH" firstAttribute="trailing" secondItem="oiH-qq-h3E" secondAttribute="trailing" id="wKm-HP-pwn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="filledPageControl" destination="tqI-F8-GVn" id="HLB-eS-EeX"/>
+                        <outlet property="pageControl" destination="ToG-Vf-PdH" id="l3N-nM-IgB"/>
+                        <outlet property="pillPageControl" destination="BZd-o2-SvV" id="Jeq-Rc-0ak"/>
+                        <outlet property="scrollView" destination="I5x-X4-qLq" id="lST-aR-E7h"/>
+                        <outlet property="scrollingPageControl" destination="qBZ-UF-9VG" id="qiw-IM-i5f"/>
+                        <outlet property="snakePageControl" destination="oiH-qq-h3E" id="Fxq-Ah-AN0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316.5" y="389.5"/>
+        </scene>
+    </scenes>
+</document>

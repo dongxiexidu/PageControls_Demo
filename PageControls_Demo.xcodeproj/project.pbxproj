@@ -81,8 +81,8 @@
 				11BBE79F207F300000D8720B /* PageControl.swift */,
 				11BBE78F207F298700D8720B /* FilledPageControl.swift */,
 				11BBE790207F298700D8720B /* PillPageControl.swift */,
-				11BBE791207F298700D8720B /* ScrollingPageControl.swift */,
 				11BBE792207F298700D8720B /* SnakePageControl.swift */,
+				11BBE791207F298700D8720B /* ScrollingPageControl.swift */,
 			);
 			path = PageControls;
 			sourceTree = SOURCE_ROOT;
@@ -303,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45S7UXYXC7;
 				INFOPLIST_FILE = PageControls_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45S7UXYXC7;
 				INFOPLIST_FILE = PageControls_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

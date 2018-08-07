@@ -11,7 +11,6 @@ import UIKit
 @IBDesignable open class ScrollingPageControl: UIView {
     
     // MARK: - PageControl
-    
     @IBInspectable open var pageCount: Int = 0 {
         didSet {
             updateNumberOfPages(pageCount)
@@ -28,7 +27,6 @@ import UIKit
     
     
     // MARK: - Appearance
-    
     @IBInspectable open var activeTint: UIColor = UIColor.white {
         didSet {
             ringLayer.borderColor = self.activeTint.cgColor
@@ -135,7 +133,6 @@ import UIKit
     
     
     // MARK: - Init
-    
     fileprivate func addRequiredLayers() {
         self.layer.addSublayer(inactiveLayersContainer)
         self.layer.addSublayer(activeLayersContainer)
@@ -156,8 +153,8 @@ import UIKit
     
     
     // MARK: - State Update
-    
     fileprivate func updateNumberOfPages(_ count: Int) {
+        
         // no need to update
         guard count != inactiveLayersContainer.sublayers?.count else { return }
         // reset current layout
@@ -209,6 +206,7 @@ import UIKit
     }
     
     fileprivate func layoutFor(_ progress: CGFloat) {
+        
         // ignore if progress is outside of page indicators' bounds
         guard progress >= 0 && progress <= CGFloat(pageCount - 1) else { return }
         let offsetFromCenter = progress * (indicatorDiameter + indicatorPadding)
@@ -256,6 +254,7 @@ import UIKit
     
     override open func layoutSubviews() {
         super.layoutSubviews()
+        
         // layout containers
         inactiveLayersContainer.frame = self.bounds
         inactiveLayerMask.frame = self.bounds
